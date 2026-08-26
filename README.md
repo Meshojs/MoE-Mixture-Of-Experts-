@@ -270,32 +270,26 @@ flowchart TD
 
 For an expert:
 
-$$
+```math
 \frac{\partial L}{\partial E_i}
-===============================
-
-g_i
-\frac{\partial L}{\partial y}
-$$
+=
+g_i \frac{\partial L}{\partial y}
+```
 
 The router also receives gradients through the routing weights.
 
 For Softmax:
 
-$$
+```math
 \frac{\partial L}{\partial z_i}
-===============================
-
+=
 p_i
 \left(
 \frac{\partial L}{\partial p_i}
--------------------------------
-
-\sum_j
-p_j
-\frac{\partial L}{\partial p_j}
+-
+\sum_j p_j \frac{\partial L}{\partial p_j}
 \right)
-$$
+```
 
 ---
 
